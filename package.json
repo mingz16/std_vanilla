@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "name": "std_vanilla",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mingz16/std_vanilla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mingz16/std_vanilla/issues"
+  },
+  "homepage": "https://github.com/mingz16/std_vanilla#readme"
+}
