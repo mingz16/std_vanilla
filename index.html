@@ -16,9 +16,33 @@
     <!-- <link rel="stylesheet" href="css/styles.css" /> -->
     <!-- <link rel="icon" href="favicon.png" /> -->
     <title>잔재미코딩</title>
+    <style>
+      html {
+        font-size: 16px;
+      }
+      span.em {
+        font-size: 2em;
+      }
+      span.rem {
+        font-size: 2rem;
+      }
+    </style>
   </head>
   <body>
     <!-- <script src="js/main.js"></script> -->
-    123
+    <form action="login.html" method="post">
+      ID : <input type="text" name="id" />
+      pw : <input type="text" name="pw" />
+    </form>
+
+    기본 사이즈
+    <span class="em">
+      <span class="em">중첩1<span class="em">중첩2</span></span>
+    </span>
+    <br />
+    기본 사이즈
+    <span class="rem">
+      <span class="rem">중첩1<span class="rem">중첩2</span></span>
+    </span>
   </body>
 </html>
