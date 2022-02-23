@@ -16,9 +16,31 @@
     <!-- <link rel="stylesheet" href="css/styles.css" /> -->
     <!-- <link rel="icon" href="favicon.png" /> -->
     <title>잔재미코딩</title>
+    <style>
+      /* [data-value="david"] {
+        color: green;
+      } */
+
+      [data-value~="david"] {
+        color: green;
+      }
+      
+      [data-value*="david"] {
+        color: green;
+      }
+    </style>
   </head>
   <body>
     <!-- <script src="js/main.js"></script> -->
-    123
+    <form action="login.html" method="post">
+      ID : <input type="text" name="id" />
+      pw : <input type="text" name="pw" />
+    </form>
+
+    <h1 class="dave">잔재미코딩</h1>
+    <h2>잔재미코딩</h2>
+    <h3>잔재미코딩</h3>
+    <h4 data-value="davedavid">잔재미코딩</h4>
+    <p data-value="davedaviddave">문단입니다.</p>
   </body>
 </html>
