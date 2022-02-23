@@ -17,14 +17,16 @@
     <!-- <link rel="icon" href="favicon.png" /> -->
     <title>잔재미코딩</title>
     <style>
-      html {
-        font-size: 16px;
+      /* [data-value="david"] {
+        color: green;
+      } */
+
+      [data-value~="david"] {
+        color: green;
       }
-      span.em {
-        font-size: 2em;
-      }
-      span.rem {
-        font-size: 2rem;
+      
+      [data-value*="david"] {
+        color: green;
       }
     </style>
   </head>
@@ -35,14 +37,10 @@
       pw : <input type="text" name="pw" />
     </form>
 
-    기본 사이즈
-    <span class="em">
-      <span class="em">중첩1<span class="em">중첩2</span></span>
-    </span>
-    <br />
-    기본 사이즈
-    <span class="rem">
-      <span class="rem">중첩1<span class="rem">중첩2</span></span>
-    </span>
+    <h1 class="dave">잔재미코딩</h1>
+    <h2>잔재미코딩</h2>
+    <h3>잔재미코딩</h3>
+    <h4 data-value="davedavid">잔재미코딩</h4>
+    <p data-value="davedaviddave">문단입니다.</p>
   </body>
 </html>
