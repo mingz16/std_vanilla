@@ -123,7 +123,6 @@ section {
 
 .skill-title {
   display: flex;
-  align-items: center;
   flex-direction: column;
   margin: 0 1rem;
 }
@@ -155,8 +154,49 @@ section {
   color: #2e7d32;
 }
 
+.roadmap-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.roadmap-title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.roadmap-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #555;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.slide-prev,
+.slide-next {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #cfcfcf;
+}
+
+.class-list {
+  display: flex;
+  list-style: none;
+}
+
 @media only screen and (min-width: 1200px) {
   .inner {
     max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .skill-container {
+    display: none;
   }
 }
