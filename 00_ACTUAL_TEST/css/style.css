@@ -197,9 +197,19 @@ section {
   color: #ff8066;
 }
 
+.slide-prev-hover:hover {
+  transition: transform 0.5s;
+  transform: translateX(-2px);
+}
+
+.slide-next-hover:hover {
+  transition: transform 0.5s;
+  transform: translateX(2px);
+}
+
 .class-list {
   display: flex;
-  overflow: hidden;
+  overflow: none;
   padding: 1rem 0;
   list-style: none;
 }
@@ -332,6 +342,15 @@ footer {
   visibility: visible;
 }
 
+/* card draggable */
+.class-list > li img:hover {
+  cursor: grab;
+}
+
+.class-list > li img:active {
+  cursor: grabbing;
+}
+
 @media only screen and (min-width: 1200px) {
   .inner {
     max-width: 1200px;
@@ -341,5 +360,41 @@ footer {
 @media only screen and (max-width: 980px) {
   .skill-container {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .class-skill {
+    display: none;
+  }
+  .class-container {
+    padding: 0.5rem;
+  }
+  .class-desc {
+    margin-top: 0rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.8rem;
+  }
+  .message {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #fff;
+    line-height: 2rem;
+  }
+  .class-skill {
+    display: none;
+  }
+  .class-container {
+    padding: 0.5rem;
+  }
+  .class-desc {
+    margin-top: 0.3rem;
   }
 }
