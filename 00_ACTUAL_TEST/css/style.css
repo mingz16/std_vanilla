@@ -293,6 +293,45 @@ footer {
   color: #545454;
 }
 
+#backToTop {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgb(47, 48, 89);
+  visibility: hidden;
+  opacity: 0;
+  transition-property: background-color, opacity, visibility;
+  transition-duration: 0.3s, 0.5s, 0.5s;
+  z-index: 999;
+}
+
+/* 아이콘 적용 방법
+  1. ::after 가상 요소에서
+  2. content: "폰트어썸 유니코드" 넣고
+  3. font-family: FontAwesome 
+*/
+#backToTop:after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-size: 1.5rem;
+  line-height: 40px;
+  color: #fff;
+}
+
+#backToTop:hover {
+  background-color: rgba(47, 48, 89, 0.8);
+  cursor: pointer;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media only screen and (min-width: 1200px) {
   .inner {
     max-width: 1200px;
